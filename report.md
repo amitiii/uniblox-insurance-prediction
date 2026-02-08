@@ -49,7 +49,7 @@ The deployment utilizes **FastAPI** for its asynchronous capabilities and native
 To evolve this into a full MLOps lifecycle, I would implement:
 
 1. **Containerization**: Wrapping the application in **Docker** to ensure environment parity across dev, staging, and production.
-2. **Model Monitoring**: Integrating a logging layer to track "Data Drift"—checking if the distribution of employees in the future starts to differ significantly from the training data.
+2. **Model Monitoring**: Integrating a logging layer to track "Data Drift" - checking if the distribution of employees in the future starts to differ significantly from the training data.
 3. **Automated Retraining**: Setting up a CI/CD pipeline to retrain the `model.pkl` whenever the underlying CSV is updated.
 
 ---

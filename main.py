@@ -4,6 +4,9 @@ import pandas as pd
 from pydantic import BaseModel
 
 app = FastAPI()
+@app.get("/")
+def home():
+    return {"message": "Uniblox Insurance Prediction API is Running!"}
 model = joblib.load('model.pkl')
 
 class PredictionInput(BaseModel):
