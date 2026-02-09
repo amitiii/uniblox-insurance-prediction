@@ -1,15 +1,20 @@
-# Employee Insurance Enrollment Prediction
+# Insurance Enrollment Prediction API
 
-An end-to-end Machine Learning pipeline and REST API to predict employee enrollment in voluntary insurance products. This project was developed as a technical assessment for the **Machine Learning Engineer** role at **Uniblox**.
+A professional Machine Learning microservice built with **XGBoost** and **FastAPI**. This project predicts whether an employee will enroll in an insurance plan based on demographic and employment metrics.
 
 ## 🚀 Project Overview
+This repository contains a complete end-to-end ML pipeline:
+1. **Model Training**: An XGBoost classifier trained on employee metadata (Age, Salary, Tenure, etc.).
+2. **REST API**: A high-performance FastAPI service for real-time inference.
+3. **Data Validation**: Strict type-checking using Pydantic schemas.
+4. **Monitoring**: Integrated health-check endpoints and professional logging.
 
-This solution identifies high-probability enrollees based on demographic and professional attributes. It features:
+## 🛠️ Installation & Setup
 
-* **Automated Pipeline**: Full data preprocessing and feature engineering.
-* **XGBoost Classifier**: A high-performance model optimized for tabular data.
-* **Production API**: A FastAPI service for real-time model inference.
-
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/amitiii/uniblox-insurance-prediction.git](https://github.com/amitiii/uniblox-insurance-prediction.git)
+   cd uniblox-insurance-prediction
 ## 🛠️ Tech Stack
 
 * **Language**: Python 3.11+
@@ -72,6 +77,8 @@ Once the server is running, navigate to:
 👉 **`http://127.0.0.1:8000/docs`**
 
 You can use the built-in **Swagger UI** to send test requests to the `/predict` endpoint.
+![API Screenshot](screenshotml.png)
+![API Screenshot](screenshotml2.png)
 
 ## 📊 Model Performance
 
@@ -83,3 +90,4 @@ The current iteration of the model utilizes an XGBoost classifier, achieving:
 *For a deeper dive into the data rationale and technical choices, please refer to the [report.md](https://github.com/amitiii/uniblox-insurance-prediction/blob/main/report.md).*
 
 ---
+
