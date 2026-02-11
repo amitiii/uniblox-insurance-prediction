@@ -75,10 +75,13 @@ python -m uvicorn main:app --reload
 
 Once the server is running, navigate to:
 👉 **`http://127.0.0.1:8000/docs`**
+### Visual Demo
 
 You can use the built-in **Swagger UI** to send test requests to the `/predict` endpoint.
-![API Screenshot](screenshotml.png)
-![API Screenshot](screenshotml2.png)
+
+![API Request Interface](Screenshot%20(524).png)
+![Successful Prediction Result](Screenshot%20(525).png)
+![Validation Logic Interface](Screenshot%20(526).png)
 
 ## 📊 Model Performance
 
